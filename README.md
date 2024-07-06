@@ -15,3 +15,6 @@ ex02-comment
 10-sw,q,if 문
 11-sw01
 12-for
+13-while
+14-etc
+15-q,function
