@@ -1,0 +1,40 @@
+객체 (Object): 중괄호 {}로 감싸진 데이터 구조. 여러 개의 키-값 쌍을 포함
+배열 (Array): 대괄호 []로 감싸진 데이터 구조. 여러 개의 값을 포함
+키-값 쌍 (Key-Value Pairs): 콜론(:)으로 구분된 키와 값. 
+                            키는 문자열이어야 하고, 값은 문자열, 숫자, 객체, 배열, 불리언 또는 null일 수 있음
+문자열 (String): 큰따옴표 "로 감싸진 텍스트 데이터.
+숫자 (Number): 정수 또는 부동 소수점 숫자.
+불리언 (Boolean): true 또는 false 값.
+null: 값이 없음을 나타내는 값.
+
+{
+  "name": "홍길동",
+  "age": 30,
+  "isStudent": false,
+  "contact": {
+    "email": "hong-gd@example.com",
+    "phone": "123-4567-8910"
+  },
+  "courses": [
+    {
+      "title": "Javascript",
+      "code": "WEB101",
+      "grade": "A"
+    },
+    {
+      "title": "HTML/CSS",
+      "code": "WEB102",
+      "grade": "B"
+    }
+  ],
+  "address": {
+    "street": "산골짜기",
+    "state": "한국",
+    "postalCode": "12345"
+  },
+  "hobbies": [
+    "동에번쩍", 
+    "서에번쩍"
+  ]
+}
+
