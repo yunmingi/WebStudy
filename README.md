@@ -1,6 +1,6 @@
 # WebStudy
 <h2>WebStudy,웹 공부</h1> 
-</br>JS_01-basic
+<h2></br>JS_01-basic</h2>
 </br>ex01-hello
 </br>ex02-comment
 </br>03-var
