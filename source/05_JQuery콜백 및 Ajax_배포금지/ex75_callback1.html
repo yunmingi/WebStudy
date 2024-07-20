@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+</head>
+
+<body>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        function func1(value){
+            document.write(value + "<br>");
+        }
+        function func2(value){
+            document.write("func2 says : " + value + "<br>");
+            return false;
+        }
+        function func3(value){
+            document.write("func3!<br>");
+            return false;
+        }
+        
+        var callbacks = $.Callbacks();
+        callbacks.add(func1);
+        callbacks.add(func2);
+        callbacks.add(func3);
+        callbacks.fire("arguments");
+    </script>
+</body>
+
+</html>

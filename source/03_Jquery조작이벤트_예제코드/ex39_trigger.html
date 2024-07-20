@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+</head>
+
+<body>
+    <h1>시작1: </h1>
+    <h1>시작2: </h1>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("h1").on("click", function(){
+               $(this).html($(this).html() + "♥");
+           });
+           setInterval(function(){
+               $("h1").last().trigger("click");
+           }, 1000);
+        });
+    </script>
+</body>
+
+</html>

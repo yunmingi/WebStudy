@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+</head>
+
+<body>
+    <p></p>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $(document).ready(function(){
+           $(window).resize(
+               function(){
+                   $("p").text("resize");
+           });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+</head>
+
+<body>
+    <p>
+        User ID: <input type="text">
+        Gender : 
+        <select name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+    </p>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $("input").blur(function(){
+                alert("포커스 이동");
+            })
+        })
+
+    </script>
+</body>
+
+</html>

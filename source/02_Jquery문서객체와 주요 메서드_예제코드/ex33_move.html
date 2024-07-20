@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+</head>
+
+<body>
+    <img src="dora.jpg" width="200"></img>
+    <img src="2.jpg" width="200"></img>
+    <img src="3.jpg" width="200"></img>
+    <img src="4.jpg" width="200"></img>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            setInterval(function(){
+                $("img").first().appendTo("body");
+               //$("body").append($("img").first());
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>

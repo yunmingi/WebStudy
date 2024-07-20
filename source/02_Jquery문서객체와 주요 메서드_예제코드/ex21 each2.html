@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+
+    <style>
+    .high_light0 {background:yellow;}
+    .high_light1 {background:orange;}
+    .high_light2 {background:blue;}
+    .high_light3 {background:green;}
+    .high_light4 {background:purple;}
+    </style>
+</head>
+
+<body>
+    <h1>레벨-0</h1>
+    <h1>레벨-1</h1>
+    <h1>레벨-2</h1>
+    <h1>레벨-3</h1>
+    <h1>레벨-4</h1>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('h1').each(function(index, item){
+                $(item).addClass('high_light' + index);
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+</head>
+
+<body>
+    <div>base1</div>
+    <div>base2</div>
+    <div>base3</div>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("div").text(function(index, html){
+                 //div태그 선택자로 선택된 요소의 개수만큼 반복 index사용
+                return "<h1>"+html+" 추가내용"+index+"</h1>";
+            })
+        });
+    </script>
+</body>
+
+</html>

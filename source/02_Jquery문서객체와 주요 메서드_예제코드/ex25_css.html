@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+    <style>
+        .first {color:red;}
+        .second {color:pink;}
+        .third {color:orange;}
+    </style>
+
+</head>
+
+<body>
+    <h1 class="first">테스트0</h1>
+    <h1 class="second">테스트1</h1>
+    <h1 class="third">테스트2</h1>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            alert($(".first").css("color"));
+        });
+    </script>
+</body>
+
+</html>

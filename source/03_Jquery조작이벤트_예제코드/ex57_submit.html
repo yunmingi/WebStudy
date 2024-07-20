@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+</head>
+
+<body>
+    <form>
+        User ID: <input type-"text" name="userid" value="garnet"><br>
+        User PW: <input type-"password" name="userpw" value="1234"><br>
+        <input type="submit" value="제출">
+    </form>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $("form").submit(function(){
+                alert("제출");
+            })
+        })
+
+    </script>
+</body>
+
+</html>

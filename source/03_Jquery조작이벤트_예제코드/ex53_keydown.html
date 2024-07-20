@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+</head>
+
+<body>
+    <form>
+        <input id="myTarget" type="text" vale="keydown">
+    </form>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $("#myTarget").keydown(function(event){
+            alert("keydown:" + event.keyCode);
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+</head>
+
+<body>
+    <div id="clicked1">
+        <h1>클릭하세요.</h1>
+    </div>
+    <div id="clicked2">
+        <h1>클릭하세요.</h1>
+    </div>
+    <div id="clicked3">
+        <h1>클릭하세요.</h1>
+    </div>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $("#clicked1").click(function(){
+            alert("클릭되었습니다.");
+        });
+        $("#clicked2").bind("click", function(){
+            alert("클릭되었습니다.");
+        })
+        $("#clicked3").on("click", function(){
+            alert("클릭되었습니다.");
+        })
+    </script>
+</body>
+
+</html>

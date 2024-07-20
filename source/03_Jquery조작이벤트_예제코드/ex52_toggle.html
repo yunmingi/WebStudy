@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+</head>
+
+<body>
+    <input type="button" value="토글" id="bt"/>
+    <ul>
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+    </ul>
+    <div id="log">보여짐</div>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        var toggleCheck = true;
+        $(document).ready(function(){
+            $("#bt").click(function(){
+                toggleCheck = !toggleCheck;
+                $("li").toggle("slow", function() { 
+                    if(!toggleCheck){
+                        $("#log").html("<p>숨김</p>");
+                    }else{
+                        $("#log").html("<p>보여짐</p>");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

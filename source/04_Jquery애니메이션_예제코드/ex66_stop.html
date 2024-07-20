@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+</head>
+
+<body>
+    <div id="sample">
+    <img id="dora" src="dora.jpg"
+        alt="" width="100px" height="200px" style="position: relative; left: 10px;"/>
+    </div>
+    <p></p>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $('#sample').hover(
+            function(event){
+                $(this).find("img").stop(true, false).fadeOut();
+                console.log("fadeOut");
+                
+            },
+            function(event){
+                $(this).find("img").stop(true, false).fadeIn();
+                console.log("fadeIn");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+</head>
+
+<body>
+    <p>
+        <div id="div1">
+            User ID: <input type="text" name="userid"><br>
+        </div>
+        <button>test</button>
+    </p>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("input").blur(function(){
+                console.log('input:blur');
+            });
+            $("input").focusout(function(){
+                console.log('input:focusout');
+            });
+            $("input").focusin(function(){
+               console.log('input:focusin');
+            });
+            $("input").focus(function(){
+                console.log('input:focus');
+            });  
+            $("div").blur(function(){
+                console.log('div:blur');
+            });
+            $("div").focusout(function(){
+                console.log('div:focusout');
+            });
+            $("div").focusin(function(){
+               console.log('div:focusin');
+            });
+            $("div").focus(function(){
+                console.log('div:focus');
+            });  
+        })
+    </script>
+</body>
+
+</html>

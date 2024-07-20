@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+</head>
+
+<body>
+    <select name="OptionSel">
+        <option value="op1">option1</option>
+        <option value="op2">option2</option>
+        <option value="op3">option3</option>
+        <option value="op4">option4</option>
+        <option value="op5">option5</option>
+    </select>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $("select").change(function(){
+                alert("변경됨");
+            })
+        })
+
+    </script>
+</body>
+
+</html>

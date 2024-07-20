@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+    <style>
+    .reverse{
+        background:blue;
+        color:yellow;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>test0</h1>
+    <h1>test1</h1>
+    <h1>test2</h1>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("h1").hover(function(){
+                $(this).addClass("reverse");
+            }, function(){
+                $(this).removeClass("reverse");
+            })
+        });
+    </script>
+</body>
+
+</html>

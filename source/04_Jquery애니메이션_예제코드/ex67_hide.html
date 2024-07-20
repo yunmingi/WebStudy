@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+</head>
+
+<body>
+    <div id="clickme">Click Me</div>
+    <img id="dora" src="dora.jpg"
+    alt="" width="100px" height="123px" 
+    style="position: relative; left: 10px"/> 
+    
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $("#clickme").click(function(){
+            $("#dora").hide("slow", function(){
+                alert('Animation complete!');
+            });
+        });
+    </script>
+</body>
+
+</html>

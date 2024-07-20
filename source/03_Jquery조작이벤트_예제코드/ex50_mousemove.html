@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+    <style>
+    #target1{
+        width:200px;
+        height:200px;
+        border:1px solid black;
+    }
+    #target2{
+        width:200px;
+        height:200px;
+        border:1px solid black;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="target1">
+        target1
+    </div>
+    <div id="target2">
+        target2
+    </div>    
+    <div id="log"></div>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $("#target1").mousemove(function(event){
+            var msg = "mousemove : ";
+            msg += event.pageX + "," + event.pageY;
+            $("#log").html("<p>"+msg+"<p>");
+        });
+    </script>
+</body>
+
+</html>

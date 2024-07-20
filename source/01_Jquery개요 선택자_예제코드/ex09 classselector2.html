@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8"/>
+        <title>JQuery</title>
+    </head>
+    <body>
+        <h1 class="item">테스트1</h1>
+        <p class="item select">테스트2</p>
+        <h1>테스트3</h1>
+        <p class="item">테스트4</p>
+
+        <script src="jquery-2.2.4.js"></script>
+        <script>
+            $(document).ready( 
+                function(){
+                    $('.item').css('color', 'red');
+                    $('h1.item').css('background', 'orange');
+                    $('.item.select').css('background', 'pink');
+                });
+        </script>
+    </body>
+</html>
+

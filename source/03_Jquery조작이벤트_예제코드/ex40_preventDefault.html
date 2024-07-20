@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+    <style>
+        a {margin:5px; padding:5px; border:3px solid black;}
+    </style>
+</head>
+
+<body>
+    <h1>
+        <a href="http://www.google.com"> 구글로 이동 </a>
+    </h1>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("a").click(function(event){
+               $(this).css("background", "blue");
+               alert("링크 이동 막음");
+               event.preventDefault();  //기본 이벤트 제거
+           })
+        });
+    </script>
+</body>
+
+</html>

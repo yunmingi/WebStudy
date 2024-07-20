@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+</head>
+
+<body>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            var arr = [
+            {name:'A', link:"https://www.naver.com"},
+            {name:'B', link:"https://www.daum.net"},
+            {name:'C', link:"https://www.google.co.kr"},
+            ];
+            $.each(arr, function(index, item){
+                var output = "";
+                output += "<a href="+item.link + ">";
+                output += "<h1>"+item.name + "</h1>";
+                output += "</a>";
+
+                document.body.innerHTML += output;
+            });
+        });
+    </script>
+</body>
+
+</html>

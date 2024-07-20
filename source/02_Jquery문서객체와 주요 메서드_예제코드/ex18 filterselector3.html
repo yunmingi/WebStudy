@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+</head>
+
+<body>
+    <h3>0</h3>
+    <h3>1</h3>
+    <h3>2</h3>
+    <h3>3</h3>
+    <h3>4</h3>
+    <h3>5</h3>
+
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $(document).ready(function () {
+            alert($('h3').eq(2).text());
+        });
+    </script>
+</body>
+
+</html>

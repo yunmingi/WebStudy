@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+    <style>
+    #external{
+        width:300px;
+        height:300px;
+        border:1px solid black;
+    }
+    #internal{
+        width:100px;
+        height:100px;
+        border:1px solid black;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="external">
+        external
+        <div id="internal">
+            internal
+        </div>    
+    </div>
+    <div id="log"></div>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $("#external").mouseenter(function(){
+            $("#log").append("<p>mouseenter<p>");
+        });
+        $("#internal").mouseleave(function(){
+            $("#log").append("<p>mouseleave<p>");
+        });
+    </script>
+</body>
+
+</html>

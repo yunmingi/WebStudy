@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery</title>
+</head>
+
+<body>
+    <table border="1">
+        <tr><td rowspan="3"><input type="text" placeholder="입력" id="input"></td>
+            <td><span class="ret" id="down">keydown</span></td></tr>
+        <tr><td><span class="ret" id="press">keypress</span></td></tr>
+        <tr><td><span class="ret" id="up">keyup</span></td></tr>
+    </table>
+    <script src="jquery-2.2.4.js"></script>
+    <script>
+        $("#input").keydown(function(event){
+            $("#down").css('color', 'yellow');
+            $("#down").css('background', 'red');
+        });
+        $("#input").keypress(function(event){
+            $("#press").css('color', 'yellow');
+            $("#press").css('background', 'red');
+        });
+        $("#input").keyup(function(event){
+            $("#up").css('color', 'yellow');
+            $("#up").css('background', 'red');
+            
+            setTimeout(function(){
+                $(".ret").css('color', 'black');
+                $(".ret").css('background', 'white');
+            },100);
+        });
+    </script>
+</body>
+
+</html>
