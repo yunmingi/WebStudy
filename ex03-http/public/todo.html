@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <script>
+    async function sendRequest(method, url, data) {
+      const options = {
+        method: method,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      };
+
+      if (method !== 'GET' && method !== 'DELETE') {
+        options.body = JSON.stringify(data);
+      }
+
+      try {
+        const response = await fetch(url, options);
+        if (method === 'DELETE' && response.status === 204) {
+          alert('Delete Success');
+          return;
+        }
+        const result = await response.json();
+        console.log('Success:', result);
+        alert('Success: ' + JSON.stringify(result));
+      } catch (error) {
+        console.error('Error:', error);
+        alert('Error: ' + error.message);
+      }
+    }
+
+    function getTodos() {
+      const id = document.getElementById('get-id').value;
+      const url = id ? `http://localhost:3000/todos/${id}` : 'http://localhost:3000/todos';
+      sendRequest('GET', url);
+    }
+
+    function addTodo() {
+      const task = document.getElementById('post-task').value;
+      sendRequest('POST', 'http://localhost:3000/todos', { task });
+    }
+
+    function updateTodo() {
+      const id = document.getElementById('put-id').value;
+      const task = document.getElementById('put-task').value;
+      sendRequest('PUT', `http://localhost:3000/todos/${id}`, { task });
+    }
+
+    function deleteTodo() {
+      const id = document.getElementById('delete-id').value;
+      sendRequest('DELETE', `http://localhost:3000/todos/${id}`);
+    }
+
+    async function loadTodos() {
+      const response = await fetch('http://localhost:3000/todos');
+      const todos = await response.json();
+      const todosList = document.getElementById('todos-list');
+      todosList.innerHTML = '';
+      todos.forEach(todo => {
+        const li = document.createElement('li');
+        li.textContent = `ID: ${todo.id}, Task: ${todo.task}`;
+        todosList.appendChild(li);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', loadTodos);
+  </script>
+</head>
+<body>
+  <h1>Todo App</h1>
+
+  <h2>GET /todos</h2>
+  <form onsubmit="event.preventDefault(); getTodos();">
+    <label for="get-id">ID (optional):</label>
+    <input type="number" id="get-id">
+    <button type="submit">Get Todos</button>
+  </form>
+
+  <h2>POST /todos</h2>
+  <form onsubmit="event.preventDefault(); addTodo();">
+    <label for="post-task">Task:</label>
+    <input type="text" id="post-task" required>
+    <button type="submit">Add Todo</button>
+  </form>
+
+  <h2>PUT /todos/:id</h2>
+  <form onsubmit="event.preventDefault(); updateTodo();">
+    <label for="put-id">ID:</label>
+    <input type="number" id="put-id" required>
+    <label for="put-task">Task:</label>
+    <input type="text" id="put-task" required>
+    <button type="submit">Update Todo</button>
+  </form>
+
+  <h2>DELETE /todos/:id</h2>
+  <form onsubmit="event.preventDefault(); deleteTodo();">
+    <label for="delete-id">ID:</label>
+    <input type="number" id="delete-id" required>
+    <button type="submit">Delete Todo</button>
+  </form>
+
+  <h2>Todo List</h2>
+  <ul id="todos-list"></ul>
+</body>
+</html>
