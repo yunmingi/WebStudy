@@ -1,0 +1,47 @@
+<body>
+    <h1>두 수 계산기</h1>
+
+    <div>
+        <label for="make1">식 입력: </label>
+        <input type="text" id="make1" />
+    </div>
+    <div>
+        <label for="make2">식 입력2: </label>
+        <input type="text" id="make2" />
+    </div>
+    <div>
+        <label for="operator">연산자 </label>
+        <input type="text" id="operator" />
+    </div>
+    <div>
+        <label for="make4">결과 </label>
+        <input type="text" id="make4" />
+    </div>
+    <br />
+
+    <h2>계산 기록</h2>
+    
+    <button type="button" id="calc-button" onclick="calculate()">계산하기</button>
+    <button type="button" id="reset-button" onclick="reset()">초기화하기</button>
+    <button type="button" id="reset-button" onclick="reset()">가져오기</button>
+
+    <script src="calculator.js"></script>
+</body>
+
+<style>
+    #operator:focus {
+        background-color: bisque;
+    }
+    #make1:focus {
+        background-color: rgb(213, 183, 242);
+    }
+    #make4:focus {
+        background-color: plum;
+    }
+    #make2:focus {
+        background-color: plum;
+    }
+    #operator {
+        width: 180px;
+    }
+</style>
