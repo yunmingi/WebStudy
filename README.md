@@ -20,7 +20,7 @@
 </br>15-q,function
 <h3>JS_02/02-Bulit-in-onhets</h3>
 
-<h3>ex02-bulit-in(node 공부)
+<h3>ex02-bulit-in(node 공부)</h3>
 </br>1.goloval 객체:모든 모듈에서 접근할수 있는 전역 객체 
 </br>2.프로세스 객체:현재 실행중인 Node.js프로세스에 대한 정보를 제공하고 제어 할 수 있는
 전역 객체 환경변수,표준 입출력 스트림,종료 이벤트등 다양한 기능 사용 가능 
