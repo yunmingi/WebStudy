@@ -19,6 +19,14 @@
 </br>14-etc
 </br>15-q,function
 <h3>JS_02/02-Bulit-in-onhets</h3>
+
+<h3>ex02-bulit-in(node 공부)
+</br>1.goloval 객체:모든 모듈에서 접근할수 있는 전역 객체 
+</br>2.프로세스 객체:현재 실행중인 Node.js프로세스에 대한 정보를 제공하고 제어 할 수 있는
+전역 객체 환경변수,표준 입출력 스트림,종료 이벤트등 다양한 기능 사용 가능 
+</br>3.console객체: 노드 콘솔로그나 콘솔 객체는 서로 다르다. 
+</br>4.Buffer객체:바이너리 데이터를 다루기위해 사용 
+</br>5.dirname:현재 모듈의 디렉터리 경로 
 </br>-index
 </br>-jsontype
 </br>ex01-object.js
