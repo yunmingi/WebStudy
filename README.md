@@ -145,3 +145,9 @@
 <h3>이력서 템플릿</h3>
 </br>이력서 템플릿 개발 
 이력서에 필요한 개인정보(이름,학교,경력) 등을 표로 깔끔하게 스타일을 개선 및 구현 하였다. 
+
+![화면 캡처 2024-08-12 104230](https://github.com/user-attachments/assets/e60db83a-d698-4105-a44c-81ded0054162)
+![화면 캡처 2024-08-12 104142](https://github.com/user-attachments/assets/8108eea5-6c57-49aa-99aa-f5cf468bdab9)
+![화면 캡처 2024-08-12 104105](https://github.com/user-attachments/assets/6b547b31-e280-4b82-8d98-f5c4c0f2b55c)
+![화면 캡처 2024-08-08 091348](https://github.com/user-attachments/assets/8dc9eaca-7381-41ed-bc40-018d627f1f02)
+![화면 캡처 2024-07-30 150101](https://github.com/user-attachments/assets/4885a76a-b36f-470c-8e7b-257ab83922d3)
