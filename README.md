@@ -143,7 +143,7 @@
 구글 리서치후 두수의 식,가져오기 버튼,계산기 기능 작성후 기록
 아쉬운점이 있다면 가져오기 기록 기능을 다 구현못했다는점과 DB연동을 실행할
 시간과 실력 부족한점이다.</br>
-![화면 캡처 2024-07-30 150101](https://github.com/user-attachments/assets/4885a76a-b36f-470c-8e7b-257ab83922d3)
+![계산기](https://github.com/user-attachments/assets/e3767d8a-5eb6-4f98-8be4-af8ac1df5811)
 
 <h3>이력서 템플릿</h3>
 </br>이력서 템플릿 개발 
